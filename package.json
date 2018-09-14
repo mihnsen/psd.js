@@ -5,6 +5,9 @@
   "main": "./dist/psd.node.js",
   "browser": "./dist/psd.browser.js",
   "cdn": "./dist/psd.browser.min.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "psd",
     "parser",
