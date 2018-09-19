@@ -1,0 +1,6606 @@
+{
+  "children": [
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "说明：职位、去向公司如未知请填写“未知”，月薪、发放月薪数、TP如未知请填写“0”",
+      "left": 179,
+      "right": 649,
+      "top": 108,
+      "bottom": 120,
+      "height": 12,
+      "width": 470,
+      "mask": {},
+      "text": {
+        "value": "说明：职位、去向公司如未知请填写“未知”，月薪、发放月薪数、TP如未知请填写“0”",
+        "font": {
+          "lengthArray": [
+            1,
+            40
+          ],
+          "styles": [
+            "normal",
+            "normal"
+          ],
+          "weights": [
+            "normal",
+            "normal"
+          ],
+          "names": [
+            "MicrosoftYaHei",
+            "AdobeInvisFont",
+            "STFangsong",
+            "AdobeHeitiStd-Regular"
+          ],
+          "sizes": [
+            12,
+            12
+          ],
+          "colors": [
+            [
+              102,
+              102,
+              102,
+              255
+            ],
+            [
+              102,
+              102,
+              102,
+              255
+            ]
+          ],
+          "alignment": [
+            "left"
+          ],
+          "textDecoration": [
+            "none",
+            "none"
+          ],
+          "leading": [
+            60,
+            60
+          ]
+        },
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "transform": {
+          "xx": 1,
+          "xy": 0,
+          "yx": 0,
+          "yy": 1,
+          "tx": 179,
+          "ty": 118
+        }
+      },
+      "image": {}
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "矩形 33 副本 拷贝 8",
+      "left": 369,
+      "right": 380,
+      "top": 654,
+      "bottom": 663,
+      "height": 9,
+      "width": 11,
+      "mask": {
+        "top": 654,
+        "left": 369,
+        "bottom": 663,
+        "right": 380,
+        "width": 11,
+        "height": 9,
+        "defaultColor": 0,
+        "relative": false,
+        "disabled": false,
+        "invert": false
+      },
+      "image": {}
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "人民币",
+      "left": 309,
+      "right": 345,
+      "top": 654,
+      "bottom": 666,
+      "height": 12,
+      "width": 36,
+      "mask": {},
+      "text": {
+        "value": "人民币",
+        "font": {
+          "lengthArray": [
+            1,
+            2
+          ],
+          "styles": [
+            "normal",
+            "normal"
+          ],
+          "weights": [
+            "normal",
+            "normal"
+          ],
+          "names": [
+            "MicrosoftYaHei",
+            "AdobeInvisFont",
+            "STFangsong",
+            "AdobeHeitiStd-Regular"
+          ],
+          "sizes": [
+            12,
+            12
+          ],
+          "colors": [
+            [
+              51,
+              51,
+              51,
+              255
+            ],
+            [
+              51,
+              51,
+              51,
+              255
+            ]
+          ],
+          "alignment": [
+            "left"
+          ],
+          "textDecoration": [
+            "none",
+            "none"
+          ],
+          "leading": [
+            36,
+            36
+          ]
+        },
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "transform": {
+          "xx": 1,
+          "xy": 0,
+          "yx": 0,
+          "yy": 1,
+          "tx": 309,
+          "ty": 664
+        }
+      },
+      "image": {}
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "矩形 28 副本 13 拷贝 14",
+      "left": 297,
+      "right": 390,
+      "top": 643,
+      "bottom": 674,
+      "height": 31,
+      "width": 93,
+      "mask": {
+        "top": 643,
+        "left": 297,
+        "bottom": 674,
+        "right": 390,
+        "width": 93,
+        "height": 31,
+        "defaultColor": 0,
+        "relative": false,
+        "disabled": false,
+        "invert": false
+      },
+      "image": {}
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "矩形 1 拷贝 4",
+      "left": 398,
+      "right": 570,
+      "top": 644,
+      "bottom": 675,
+      "height": 31,
+      "width": 172,
+      "mask": {
+        "top": 644,
+        "left": 398,
+        "bottom": 675,
+        "right": 570,
+        "width": 172,
+        "height": 31,
+        "defaultColor": 0,
+        "relative": false,
+        "disabled": false,
+        "invert": false
+      },
+      "image": {}
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "*TP",
+      "left": 263,
+      "right": 287,
+      "top": 652,
+      "bottom": 662,
+      "height": 10,
+      "width": 24,
+      "mask": {},
+      "text": {
+        "value": "*TP",
+        "font": {
+          "lengthArray": [
+            1,
+            2
+          ],
+          "styles": [
+            "normal",
+            "normal"
+          ],
+          "weights": [
+            "normal",
+            "bold"
+          ],
+          "names": [
+            "MicrosoftYaHei",
+            "MicrosoftYaHei",
+            "AdobeInvisFont",
+            "STFangsong",
+            "AdobeHeitiStd-Regular"
+          ],
+          "sizes": [
+            20,
+            12
+          ],
+          "colors": [
+            [
+              203,
+              46,
+              43,
+              255
+            ],
+            [
+              51,
+              51,
+              51,
+              255
+            ]
+          ],
+          "alignment": [
+            "right"
+          ],
+          "textDecoration": [
+            "none",
+            "none"
+          ],
+          "leading": [
+            39,
+            36
+          ]
+        },
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "transform": {
+          "xx": 1,
+          "xy": 0,
+          "yx": 0,
+          "yy": 1,
+          "tx": 287,
+          "ty": 661
+        }
+      },
+      "image": {}
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "请填写14.6或者14等",
+      "left": 309,
+      "right": 419,
+      "top": 564,
+      "bottom": 577,
+      "height": 13,
+      "width": 110,
+      "mask": {},
+      "text": {
+        "value": "请填写14.6或者14等",
+        "font": {
+          "lengthArray": [
+            1,
+            11
+          ],
+          "styles": [
+            "normal",
+            "normal"
+          ],
+          "weights": [
+            "normal",
+            "normal"
+          ],
+          "names": [
+            "MicrosoftYaHei",
+            "AdobeInvisFont",
+            "STFangsong",
+            "AdobeHeitiStd-Regular"
+          ],
+          "sizes": [
+            12,
+            12
+          ],
+          "colors": [
+            [
+              153,
+              153,
+              153,
+              255
+            ],
+            [
+              153,
+              153,
+              153,
+              255
+            ]
+          ],
+          "alignment": [
+            "left"
+          ],
+          "textDecoration": [
+            "none",
+            "none"
+          ],
+          "leading": [
+            36,
+            36
+          ]
+        },
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "transform": {
+          "xx": 1,
+          "xy": 0,
+          "yx": 0,
+          "yy": 1,
+          "tx": 309,
+          "ty": 575
+        }
+      },
+      "image": {}
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "请填写具体薪酬值",
+      "left": 409,
+      "right": 505,
+      "top": 521,
+      "bottom": 534,
+      "height": 13,
+      "width": 96,
+      "mask": {},
+      "text": {
+        "value": "请填写具体薪酬值",
+        "font": {
+          "lengthArray": [
+            1,
+            7
+          ],
+          "styles": [
+            "normal",
+            "normal"
+          ],
+          "weights": [
+            "normal",
+            "normal"
+          ],
+          "names": [
+            "MicrosoftYaHei",
+            "AdobeInvisFont",
+            "STFangsong",
+            "AdobeHeitiStd-Regular"
+          ],
+          "sizes": [
+            12,
+            12
+          ],
+          "colors": [
+            [
+              153,
+              153,
+              153,
+              255
+            ],
+            [
+              153,
+              153,
+              153,
+              255
+            ]
+          ],
+          "alignment": [
+            "left"
+          ],
+          "textDecoration": [
+            "none",
+            "none"
+          ],
+          "leading": [
+            36,
+            36
+          ]
+        },
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "transform": {
+          "xx": 1,
+          "xy": 0,
+          "yx": 0,
+          "yy": 1,
+          "tx": 409,
+          "ty": 532
+        }
+      },
+      "image": {}
+    },
+    {
+      "type": "group",
+      "visible": false,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 6 拷贝",
+      "left": 947,
+      "right": 1654,
+      "top": 15,
+      "bottom": 561,
+      "height": 546,
+      "width": 707,
+      "children": [
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 33 副本 拷贝 5",
+          "left": 1250,
+          "right": 1261,
+          "top": 133,
+          "bottom": 142,
+          "height": 9,
+          "width": 11,
+          "mask": {
+            "top": 133,
+            "left": 1250,
+            "bottom": 142,
+            "right": 1261,
+            "width": 11,
+            "height": 9,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 33 副本 拷贝 4",
+          "left": 1250,
+          "right": 1261,
+          "top": 173,
+          "bottom": 182,
+          "height": 9,
+          "width": 11,
+          "mask": {
+            "top": 173,
+            "left": 1250,
+            "bottom": 182,
+            "right": 1261,
+            "width": 11,
+            "height": 9,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 33 副本 拷贝 3",
+          "left": 1250,
+          "right": 1261,
+          "top": 93,
+          "bottom": 102,
+          "height": 9,
+          "width": 11,
+          "mask": {
+            "top": 93,
+            "left": 1250,
+            "bottom": 102,
+            "right": 1261,
+            "width": 11,
+            "height": 9,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "允许补发欢迎信",
+          "left": 1135,
+          "right": 1219,
+          "top": 358,
+          "bottom": 371,
+          "height": 13,
+          "width": 84,
+          "mask": {},
+          "text": {
+            "value": "允许补发欢迎信",
+            "font": {
+              "lengthArray": [
+                1,
+                6
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1135,
+              "ty": 369
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*转正办理",
+          "left": 1039,
+          "right": 1097,
+          "top": 358,
+          "bottom": 371,
+          "height": 13,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*转正办理",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 369
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "形状 16 拷贝 2",
+          "left": 1112,
+          "right": 1125,
+          "top": 357,
+          "bottom": 370,
+          "height": 13,
+          "width": 13,
+          "mask": {
+            "top": 357,
+            "left": 1112,
+            "bottom": 370,
+            "right": 1125,
+            "width": 13,
+            "height": 13,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 5",
+          "left": 1107,
+          "right": 1130,
+          "top": 352,
+          "bottom": 375,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 352,
+            "left": 1107,
+            "bottom": 375,
+            "right": 1130,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "允许屏蔽员工",
+          "left": 1277,
+          "right": 1349,
+          "top": 358,
+          "bottom": 371,
+          "height": 13,
+          "width": 72,
+          "mask": {},
+          "text": {
+            "value": "允许屏蔽员工",
+            "font": {
+              "lengthArray": [
+                1,
+                5
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1277,
+              "ty": 369
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 10",
+          "left": 1249,
+          "right": 1272,
+          "top": 352,
+          "bottom": 375,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 352,
+            "left": 1249,
+            "bottom": 375,
+            "right": 1272,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "允许变更公司邮箱",
+          "left": 1135,
+          "right": 1231,
+          "top": 312,
+          "bottom": 325,
+          "height": 13,
+          "width": 96,
+          "mask": {},
+          "text": {
+            "value": "允许变更公司邮箱",
+            "font": {
+              "lengthArray": [
+                1,
+                7
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1135,
+              "ty": 323
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*入职办理",
+          "left": 1039,
+          "right": 1097,
+          "top": 313,
+          "bottom": 325,
+          "height": 12,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*入职办理",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 323
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "形状 16 拷贝 2",
+          "left": 1112,
+          "right": 1125,
+          "top": 311,
+          "bottom": 324,
+          "height": 13,
+          "width": 13,
+          "mask": {
+            "top": 311,
+            "left": 1112,
+            "bottom": 324,
+            "right": 1125,
+            "width": 13,
+            "height": 13,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 5",
+          "left": 1107,
+          "right": 1130,
+          "top": 306,
+          "bottom": 329,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 306,
+            "left": 1107,
+            "bottom": 329,
+            "right": 1130,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "允许屏蔽员工",
+          "left": 1407,
+          "right": 1479,
+          "top": 312,
+          "bottom": 325,
+          "height": 13,
+          "width": 72,
+          "mask": {},
+          "text": {
+            "value": "允许屏蔽员工",
+            "font": {
+              "lengthArray": [
+                1,
+                5
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1407,
+              "ty": 323
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 11",
+          "left": 1379,
+          "right": 1402,
+          "top": 306,
+          "bottom": 329,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 306,
+            "left": 1379,
+            "bottom": 329,
+            "right": 1402,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "允许补发欢迎信",
+          "left": 1277,
+          "right": 1361,
+          "top": 312,
+          "bottom": 325,
+          "height": 13,
+          "width": 84,
+          "mask": {},
+          "text": {
+            "value": "允许补发欢迎信",
+            "font": {
+              "lengthArray": [
+                1,
+                6
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1277,
+              "ty": 323
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 10",
+          "left": 1249,
+          "right": 1272,
+          "top": 306,
+          "bottom": 329,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 306,
+            "left": 1249,
+            "bottom": 329,
+            "right": 1272,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "支持发送背调需求",
+          "left": 1135,
+          "right": 1231,
+          "top": 266,
+          "bottom": 279,
+          "height": 13,
+          "width": 96,
+          "mask": {},
+          "text": {
+            "value": "支持发送背调需求",
+            "font": {
+              "lengthArray": [
+                1,
+                7
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1135,
+              "ty": 277
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*offer处理",
+          "left": 1035,
+          "right": 1097,
+          "top": 266,
+          "bottom": 279,
+          "height": 13,
+          "width": 62,
+          "mask": {},
+          "text": {
+            "value": "*offer处理",
+            "font": {
+              "lengthArray": [
+                1,
+                7
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 277
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "形状 16 拷贝 2",
+          "left": 1112,
+          "right": 1125,
+          "top": 265,
+          "bottom": 278,
+          "height": 13,
+          "width": 13,
+          "mask": {
+            "top": 265,
+            "left": 1112,
+            "bottom": 278,
+            "right": 1125,
+            "width": 13,
+            "height": 13,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 5",
+          "left": 1107,
+          "right": 1130,
+          "top": 260,
+          "bottom": 283,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 260,
+            "left": 1107,
+            "bottom": 283,
+            "right": 1130,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "支持申请实习",
+          "left": 1277,
+          "right": 1348,
+          "top": 266,
+          "bottom": 279,
+          "height": 13,
+          "width": 71,
+          "mask": {},
+          "text": {
+            "value": "支持申请实习",
+            "font": {
+              "lengthArray": [
+                1,
+                5
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1277,
+              "ty": 277
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 10",
+          "left": 1249,
+          "right": 1272,
+          "top": 260,
+          "bottom": 283,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 260,
+            "left": 1249,
+            "bottom": 283,
+            "right": 1272,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "预算系统",
+          "left": 1135,
+          "right": 1183,
+          "top": 220,
+          "bottom": 233,
+          "height": 13,
+          "width": 48,
+          "mask": {},
+          "text": {
+            "value": "预算系统",
+            "font": {
+              "lengthArray": [
+                1,
+                3
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1135,
+              "ty": 231
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*业务系统对接",
+          "left": 1014,
+          "right": 1097,
+          "top": 220,
+          "bottom": 233,
+          "height": 13,
+          "width": 83,
+          "mask": {},
+          "text": {
+            "value": "*业务系统对接",
+            "font": {
+              "lengthArray": [
+                1,
+                6
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 231
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "形状 16 拷贝 2",
+          "left": 1112,
+          "right": 1125,
+          "top": 219,
+          "bottom": 232,
+          "height": 13,
+          "width": 13,
+          "mask": {
+            "top": 219,
+            "left": 1112,
+            "bottom": 232,
+            "right": 1125,
+            "width": 13,
+            "height": 13,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 5",
+          "left": 1107,
+          "right": 1130,
+          "top": 214,
+          "bottom": 237,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 214,
+            "left": 1107,
+            "bottom": 237,
+            "right": 1130,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "入职系统确认通讯费",
+          "left": 1407,
+          "right": 1515,
+          "top": 220,
+          "bottom": 233,
+          "height": 13,
+          "width": 108,
+          "mask": {},
+          "text": {
+            "value": "入职系统确认通讯费",
+            "font": {
+              "lengthArray": [
+                1,
+                8
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1407,
+              "ty": 231
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 8",
+          "left": 1379,
+          "right": 1402,
+          "top": 214,
+          "bottom": 237,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 214,
+            "left": 1379,
+            "bottom": 237,
+            "right": 1402,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "产品线系统",
+          "left": 1277,
+          "right": 1337,
+          "top": 220,
+          "bottom": 233,
+          "height": 13,
+          "width": 60,
+          "mask": {},
+          "text": {
+            "value": "产品线系统",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1277,
+              "ty": 231
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 7",
+          "left": 1249,
+          "right": 1272,
+          "top": 214,
+          "bottom": 237,
+          "height": 23,
+          "width": 23,
+          "mask": {
+            "top": 214,
+            "left": 1249,
+            "bottom": 237,
+            "right": 1272,
+            "width": 23,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1",
+          "left": 1108,
+          "right": 1516,
+          "top": 399,
+          "bottom": 462,
+          "height": 63,
+          "width": 408,
+          "mask": {
+            "top": 399,
+            "left": 1108,
+            "bottom": 462,
+            "right": 1516,
+            "width": 408,
+            "height": 63,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "备注",
+          "left": 1072,
+          "right": 1098,
+          "top": 400,
+          "bottom": 413,
+          "height": 13,
+          "width": 26,
+          "mask": {},
+          "text": {
+            "value": "备注",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 411
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 28 副本 13 拷贝 8",
+          "left": 1107,
+          "right": 1270,
+          "top": 120,
+          "bottom": 151,
+          "height": 31,
+          "width": 163,
+          "mask": {
+            "top": 120,
+            "left": 1107,
+            "bottom": 151,
+            "right": 1270,
+            "width": 163,
+            "height": 31,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*申请类型",
+          "left": 1039,
+          "right": 1097,
+          "top": 130,
+          "bottom": 144,
+          "height": 14,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*申请类型",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 141
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 28 副本 13 拷贝 7",
+          "left": 1107,
+          "right": 1270,
+          "top": 160,
+          "bottom": 191,
+          "height": 31,
+          "width": 163,
+          "mask": {
+            "top": 160,
+            "left": 1107,
+            "bottom": 191,
+            "right": 1270,
+            "width": 163,
+            "height": 31,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*员工类型",
+          "left": 1039,
+          "right": 1097,
+          "top": 170,
+          "bottom": 184,
+          "height": 14,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*员工类型",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 181
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 28 副本 13 拷贝 6",
+          "left": 1107,
+          "right": 1270,
+          "top": 80,
+          "bottom": 111,
+          "height": 31,
+          "width": 163,
+          "mask": {
+            "top": 80,
+            "left": 1107,
+            "bottom": 111,
+            "right": 1270,
+            "width": 163,
+            "height": 31,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*公司类型",
+          "left": 1039,
+          "right": 1097,
+          "top": 90,
+          "bottom": 104,
+          "height": 14,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*公司类型",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 1097,
+              "ty": 101
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 35 拷贝 7",
+          "left": 1540,
+          "right": 1555,
+          "top": 31,
+          "bottom": 46,
+          "height": 15,
+          "width": 15,
+          "mask": {
+            "top": 31,
+            "left": 1540,
+            "bottom": 46,
+            "right": 1555,
+            "width": 15,
+            "height": 15,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "新增",
+          "left": 974,
+          "right": 1007,
+          "top": 29,
+          "bottom": 46,
+          "height": 17,
+          "width": 33,
+          "mask": {},
+          "text": {
+            "value": "新增",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                16,
+                16
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 974,
+              "ty": 43
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "组 7",
+          "left": 1158,
+          "right": 1370,
+          "top": 512,
+          "bottom": 548,
+          "height": 36,
+          "width": 212,
+          "children": [
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "取消 拷贝 7",
+              "left": 1305,
+              "right": 1333,
+              "top": 523,
+              "bottom": 537,
+              "height": 14,
+              "width": 28,
+              "mask": {},
+              "text": {
+                "value": "取消",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    1
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "bold",
+                    "bold"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    14,
+                    14
+                  ],
+                  "colors": [
+                    [
+                      153,
+                      153,
+                      153,
+                      255
+                    ],
+                    [
+                      153,
+                      153,
+                      153,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "left"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    24,
+                    24
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 1304.96484375,
+                  "ty": 534.66015625
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 1 拷贝 9",
+              "left": 1267,
+              "right": 1370,
+              "top": 512,
+              "bottom": 548,
+              "height": 36,
+              "width": 103,
+              "mask": {
+                "top": 512,
+                "left": 1267,
+                "bottom": 548,
+                "right": 1370,
+                "width": 103,
+                "height": 36,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "保存 拷贝 2",
+              "left": 1195,
+              "right": 1224,
+              "top": 523,
+              "bottom": 537,
+              "height": 14,
+              "width": 29,
+              "mask": {},
+              "text": {
+                "value": "保存",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    1
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "bold",
+                    "bold"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    14,
+                    14
+                  ],
+                  "colors": [
+                    [
+                      255,
+                      255,
+                      255,
+                      255
+                    ],
+                    [
+                      255,
+                      255,
+                      255,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "left"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    24,
+                    24
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 1194.96484375,
+                  "ty": 534.66015625
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 1 拷贝 9",
+              "left": 1158,
+              "right": 1261,
+              "top": 512,
+              "bottom": 548,
+              "height": 36,
+              "width": 103,
+              "mask": {
+                "top": 512,
+                "left": 1158,
+                "bottom": 548,
+                "right": 1261,
+                "width": 103,
+                "height": 36,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            }
+          ]
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 2 拷贝 7",
+          "left": 947,
+          "right": 1654,
+          "top": 56,
+          "bottom": 501,
+          "height": 445,
+          "width": 707,
+          "mask": {
+            "top": 56,
+            "left": 947,
+            "bottom": 501,
+            "right": 1654,
+            "width": 707,
+            "height": 445,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 3 拷贝 7",
+          "left": 959,
+          "right": 1569,
+          "top": 15,
+          "bottom": 561,
+          "height": 546,
+          "width": 610,
+          "mask": {
+            "top": 15,
+            "left": 959,
+            "bottom": 561,
+            "right": 1569,
+            "width": 610,
+            "height": 546,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 6",
+      "left": 163,
+      "right": 818,
+      "top": 56,
+      "bottom": 865,
+      "height": 809,
+      "width": 655,
+      "children": [
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*发放月薪数",
+          "left": 217,
+          "right": 288,
+          "top": 565,
+          "bottom": 578,
+          "height": 13,
+          "width": 71,
+          "mask": {},
+          "text": {
+            "value": "*发放月薪数",
+            "font": {
+              "lengthArray": [
+                1,
+                5
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 576
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 6",
+          "left": 297,
+          "right": 568,
+          "top": 555,
+          "bottom": 586,
+          "height": 31,
+          "width": 271,
+          "mask": {
+            "top": 555,
+            "left": 297,
+            "bottom": 586,
+            "right": 568,
+            "width": 271,
+            "height": 31,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 6",
+          "left": 398,
+          "right": 568,
+          "top": 512,
+          "bottom": 542,
+          "height": 30,
+          "width": 170,
+          "mask": {
+            "top": 512,
+            "left": 398,
+            "bottom": 542,
+            "right": 568,
+            "width": 170,
+            "height": 30,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*月薪",
+          "left": 254,
+          "right": 288,
+          "top": 521,
+          "bottom": 534,
+          "height": 13,
+          "width": 34,
+          "mask": {},
+          "text": {
+            "value": "*月薪",
+            "font": {
+              "lengthArray": [
+                1,
+                2
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 532
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*职位",
+          "left": 254,
+          "right": 288,
+          "top": 264,
+          "bottom": 276,
+          "height": 12,
+          "width": 34,
+          "mask": {},
+          "text": {
+            "value": "*职位",
+            "font": {
+              "lengthArray": [
+                1,
+                2
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 274
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "888888888888",
+          "left": 297,
+          "right": 764,
+          "top": 511,
+          "bottom": 630,
+          "height": 119,
+          "width": 467,
+          "children": [
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 33 副本 拷贝 8",
+              "left": 369,
+              "right": 380,
+              "top": 522,
+              "bottom": 531,
+              "height": 9,
+              "width": 11,
+              "mask": {
+                "top": 522,
+                "left": 369,
+                "bottom": 531,
+                "right": 380,
+                "width": 11,
+                "height": 9,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 33 副本 拷贝 7",
+              "left": 507,
+              "right": 518,
+              "top": 610,
+              "bottom": 619,
+              "height": 9,
+              "width": 11,
+              "mask": {
+                "top": 610,
+                "left": 507,
+                "bottom": 619,
+                "right": 518,
+                "width": 11,
+                "height": 9,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 28 副本 13 拷贝 12",
+              "left": 690,
+              "right": 743,
+              "top": 599,
+              "bottom": 630,
+              "height": 31,
+              "width": 53,
+              "mask": {
+                "top": 599,
+                "left": 690,
+                "bottom": 630,
+                "right": 743,
+                "width": 53,
+                "height": 31,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "×",
+              "left": 676,
+              "right": 683,
+              "top": 612,
+              "bottom": 619,
+              "height": 7,
+              "width": 7,
+              "mask": {},
+              "text": {
+                "value": "×",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    0
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "bold",
+                    "bold"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    12,
+                    12
+                  ],
+                  "colors": [
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ],
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "right"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    36,
+                    36
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 684,
+                  "ty": 619
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "人民币",
+              "left": 309,
+              "right": 345,
+              "top": 522,
+              "bottom": 534,
+              "height": 12,
+              "width": 36,
+              "mask": {},
+              "text": {
+                "value": "人民币",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    2
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "normal",
+                    "normal"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    12,
+                    12
+                  ],
+                  "colors": [
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ],
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "left"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    36,
+                    36
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 309,
+                  "ty": 532
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 28 副本 13 拷贝 14",
+              "left": 297,
+              "right": 390,
+              "top": 511,
+              "bottom": 542,
+              "height": 31,
+              "width": 93,
+              "mask": {
+                "top": 511,
+                "left": 297,
+                "bottom": 542,
+                "right": 390,
+                "width": 93,
+                "height": 31,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "人民币",
+              "left": 447,
+              "right": 483,
+              "top": 610,
+              "bottom": 622,
+              "height": 12,
+              "width": 36,
+              "mask": {},
+              "text": {
+                "value": "人民币",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    2
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "normal",
+                    "normal"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    12,
+                    12
+                  ],
+                  "colors": [
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ],
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "left"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    36,
+                    36
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 447,
+                  "ty": 620
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 28 副本 13 拷贝 13",
+              "left": 435,
+              "right": 528,
+              "top": 599,
+              "bottom": 630,
+              "height": 31,
+              "width": 93,
+              "mask": {
+                "top": 599,
+                "left": 435,
+                "bottom": 630,
+                "right": 528,
+                "width": 93,
+                "height": 31,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 33 副本 拷贝 6",
+              "left": 407,
+              "right": 418,
+              "top": 610,
+              "bottom": 619,
+              "height": 9,
+              "width": 11,
+              "mask": {
+                "top": 610,
+                "left": 407,
+                "bottom": 619,
+                "right": 418,
+                "width": 11,
+                "height": 9,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "年",
+              "left": 752,
+              "right": 764,
+              "top": 608,
+              "bottom": 621,
+              "height": 13,
+              "width": 12,
+              "mask": {},
+              "text": {
+                "value": "年",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    0
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "normal",
+                    "normal"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    12,
+                    12
+                  ],
+                  "colors": [
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ],
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "left"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    36,
+                    36
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 752,
+                  "ty": 619
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "每年授予",
+              "left": 298,
+              "right": 346,
+              "top": 609,
+              "bottom": 622,
+              "height": 13,
+              "width": 48,
+              "mask": {},
+              "text": {
+                "value": "每年授予",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    3
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "normal",
+                    "normal"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    12,
+                    12
+                  ],
+                  "colors": [
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ],
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "left"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    36,
+                    36
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 298,
+                  "ty": 620
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 28 副本 13 拷贝 11",
+              "left": 535,
+              "right": 668,
+              "top": 599,
+              "bottom": 630,
+              "height": 31,
+              "width": 133,
+              "mask": {
+                "top": 599,
+                "left": 535,
+                "bottom": 630,
+                "right": 668,
+                "width": 133,
+                "height": 31,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "价值",
+              "left": 367,
+              "right": 391,
+              "top": 609,
+              "bottom": 622,
+              "height": 13,
+              "width": 24,
+              "mask": {},
+              "text": {
+                "value": "价值",
+                "font": {
+                  "lengthArray": [
+                    1,
+                    1
+                  ],
+                  "styles": [
+                    "normal",
+                    "normal"
+                  ],
+                  "weights": [
+                    "normal",
+                    "normal"
+                  ],
+                  "names": [
+                    "MicrosoftYaHei",
+                    "AdobeInvisFont",
+                    "STFangsong",
+                    "AdobeHeitiStd-Regular"
+                  ],
+                  "sizes": [
+                    12,
+                    12
+                  ],
+                  "colors": [
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ],
+                    [
+                      51,
+                      51,
+                      51,
+                      255
+                    ]
+                  ],
+                  "alignment": [
+                    "left"
+                  ],
+                  "textDecoration": [
+                    "none",
+                    "none"
+                  ],
+                  "leading": [
+                    36,
+                    36
+                  ]
+                },
+                "left": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "transform": {
+                  "xx": 1,
+                  "xy": 0,
+                  "yx": 0,
+                  "yy": 1,
+                  "tx": 367,
+                  "ty": 620
+                }
+              },
+              "image": {}
+            },
+            {
+              "type": "layer",
+              "visible": true,
+              "opacity": 1,
+              "blendingMode": "normal",
+              "name": "矩形 28 副本 13 拷贝 10",
+              "left": 355,
+              "right": 428,
+              "top": 599,
+              "bottom": 630,
+              "height": 31,
+              "width": 73,
+              "mask": {
+                "top": 599,
+                "left": 355,
+                "bottom": 630,
+                "right": 428,
+                "width": 73,
+                "height": 31,
+                "defaultColor": 0,
+                "relative": false,
+                "disabled": false,
+                "invert": false
+              },
+              "image": {}
+            }
+          ]
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "详细原因说明（非必填），100字以内",
+          "left": 311,
+          "right": 511,
+          "top": 392,
+          "bottom": 405,
+          "height": 13,
+          "width": 200,
+          "mask": {},
+          "text": {
+            "value": "详细原因说明（非必填），100字以内",
+            "font": {
+              "lengthArray": [
+                1,
+                17
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  153,
+                  153,
+                  153,
+                  255
+                ],
+                [
+                  153,
+                  153,
+                  153,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 311,
+              "ty": 403
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "拒绝offer信息",
+          "left": 179,
+          "right": 271,
+          "top": 147,
+          "bottom": 162,
+          "height": 15,
+          "width": 92,
+          "mask": {},
+          "text": {
+            "value": "拒绝offer信息",
+            "font": {
+              "lengthArray": [
+                1,
+                8
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 271,
+              "ty": 159
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "去向公司薪酬水平",
+          "left": 180,
+          "right": 295,
+          "top": 479,
+          "bottom": 494,
+          "height": 15,
+          "width": 115,
+          "mask": {},
+          "text": {
+            "value": "去向公司薪酬水平",
+            "font": {
+              "lengthArray": [
+                1,
+                7
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 295,
+              "ty": 491
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "股票信息",
+          "left": 238,
+          "right": 288,
+          "top": 609,
+          "bottom": 622,
+          "height": 13,
+          "width": 50,
+          "mask": {},
+          "text": {
+            "value": "股票信息",
+            "font": {
+              "lengthArray": [
+                1,
+                3
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 620
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 2",
+          "left": 297,
+          "right": 460,
+          "top": 254,
+          "bottom": 284,
+          "height": 30,
+          "width": 163,
+          "mask": {
+            "top": 254,
+            "left": 297,
+            "bottom": 284,
+            "right": 460,
+            "width": 163,
+            "height": 30,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 3",
+          "left": 297,
+          "right": 460,
+          "top": 210,
+          "bottom": 241,
+          "height": 31,
+          "width": 163,
+          "mask": {
+            "top": 210,
+            "left": 297,
+            "bottom": 241,
+            "right": 460,
+            "width": 163,
+            "height": 31,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝",
+          "left": 297,
+          "right": 766,
+          "top": 379,
+          "bottom": 442,
+          "height": 63,
+          "width": 469,
+          "mask": {
+            "top": 379,
+            "left": 297,
+            "bottom": 442,
+            "right": 766,
+            "width": 469,
+            "height": 63,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "100字 拷贝",
+          "left": 302,
+          "right": 334,
+          "top": 444,
+          "bottom": 456,
+          "height": 12,
+          "width": 32,
+          "mask": {},
+          "text": {
+            "value": "100字",
+            "font": {
+              "lengthArray": [
+                4
+              ],
+              "styles": [
+                "normal"
+              ],
+              "weights": [
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12
+              ],
+              "colors": [
+                [
+                  153,
+                  153,
+                  153,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none"
+              ],
+              "leading": [
+                60
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 0.9999999999999999,
+              "tx": 334.0385438972162,
+              "ty": 454.5634266886327
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "100字",
+          "left": 300,
+          "right": 332,
+          "top": 752,
+          "bottom": 764,
+          "height": 12,
+          "width": 32,
+          "mask": {},
+          "text": {
+            "value": "100字",
+            "font": {
+              "lengthArray": [
+                4
+              ],
+              "styles": [
+                "normal"
+              ],
+              "weights": [
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12
+              ],
+              "colors": [
+                [
+                  153,
+                  153,
+                  153,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none"
+              ],
+              "leading": [
+                60
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 0.9999999999999999,
+              "tx": 332.0385438972162,
+              "ty": 762.5634266886327
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1",
+          "left": 297,
+          "right": 766,
+          "top": 688,
+          "bottom": 750,
+          "height": 62,
+          "width": 469,
+          "mask": {
+            "top": 688,
+            "left": 297,
+            "bottom": 750,
+            "right": 766,
+            "width": 469,
+            "height": 62,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "其他备注",
+          "left": 238,
+          "right": 288,
+          "top": 691,
+          "bottom": 704,
+          "height": 13,
+          "width": 50,
+          "mask": {},
+          "text": {
+            "value": "其他备注",
+            "font": {
+              "lengthArray": [
+                1,
+                3
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 702
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*拒绝日期",
+          "left": 534,
+          "right": 592,
+          "top": 263,
+          "bottom": 276,
+          "height": 13,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*拒绝日期",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 592,
+              "ty": 274
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*拒绝原因",
+          "left": 229,
+          "right": 287,
+          "top": 306,
+          "bottom": 319,
+          "height": 13,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*拒绝原因",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 317
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "*去向公司",
+          "left": 229,
+          "right": 287,
+          "top": 220,
+          "bottom": 232,
+          "height": 12,
+          "width": 58,
+          "mask": {},
+          "text": {
+            "value": "*去向公司",
+            "font": {
+              "lengthArray": [
+                1,
+                4
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                20,
+                12
+              ],
+              "colors": [
+                [
+                  203,
+                  46,
+                  43,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                39,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 230
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "拒绝",
+          "left": 436,
+          "right": 460,
+          "top": 179,
+          "bottom": 192,
+          "height": 13,
+          "width": 24,
+          "mask": {},
+          "text": {
+            "value": "拒绝",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 436,
+              "ty": 190
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "offer处理",
+          "left": 371,
+          "right": 424,
+          "top": 179,
+          "bottom": 192,
+          "height": 13,
+          "width": 53,
+          "mask": {},
+          "text": {
+            "value": "offer处理",
+            "font": {
+              "lengthArray": [
+                1,
+                6
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 424,
+              "ty": 190
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "2016-09-01",
+          "left": 612,
+          "right": 679,
+          "top": 264,
+          "bottom": 273,
+          "height": 9,
+          "width": 67,
+          "mask": {},
+          "text": {
+            "value": "2016-09-01",
+            "font": {
+              "lengthArray": [
+                1,
+                9
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 612,
+              "ty": 273
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 38 拷贝 3 副本 2",
+          "left": 741,
+          "right": 760,
+          "top": 259,
+          "bottom": 278,
+          "height": 19,
+          "width": 19,
+          "mask": {
+            "top": 259,
+            "left": 741,
+            "bottom": 278,
+            "right": 760,
+            "width": 19,
+            "height": 19,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 28 副本 13 拷贝 2",
+          "left": 602,
+          "right": 765,
+          "top": 253,
+          "bottom": 284,
+          "height": 31,
+          "width": 163,
+          "mask": {
+            "top": 253,
+            "left": 602,
+            "bottom": 284,
+            "right": 765,
+            "width": 163,
+            "height": 31,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "卢海川",
+          "left": 299,
+          "right": 334,
+          "top": 179,
+          "bottom": 192,
+          "height": 13,
+          "width": 35,
+          "mask": {},
+          "text": {
+            "value": "卢海川",
+            "font": {
+              "lengthArray": [
+                1,
+                2
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 299,
+              "ty": 190
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "候选人",
+          "left": 250,
+          "right": 288,
+          "top": 180,
+          "bottom": 192,
+          "height": 12,
+          "width": 38,
+          "mask": {},
+          "text": {
+            "value": "候选人",
+            "font": {
+              "lengthArray": [
+                1,
+                2
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12,
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "right"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 287,
+              "ty": 190
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 35 拷贝 7",
+          "left": 789,
+          "right": 804,
+          "top": 72,
+          "bottom": 87,
+          "height": 15,
+          "width": 15,
+          "mask": {
+            "top": 72,
+            "left": 789,
+            "bottom": 87,
+            "right": 804,
+            "width": 15,
+            "height": 15,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "拒绝offer",
+          "left": 179,
+          "right": 251,
+          "top": 71,
+          "bottom": 86,
+          "height": 15,
+          "width": 72,
+          "mask": {},
+          "text": {
+            "value": "拒绝offer",
+            "font": {
+              "lengthArray": [
+                1,
+                6
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                16,
+                16
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ],
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                36,
+                36
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 179,
+              "ty": 84
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "深造",
+          "left": 570,
+          "right": 598,
+          "top": 306,
+          "bottom": 320,
+          "height": 14,
+          "width": 28,
+          "mask": {},
+          "text": {
+            "value": "深造",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ],
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 569.96484375,
+              "ty": 317.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 15",
+          "left": 546,
+          "right": 623,
+          "top": 297,
+          "bottom": 329,
+          "height": 32,
+          "width": 77,
+          "mask": {
+            "top": 297,
+            "left": 546,
+            "bottom": 329,
+            "right": 623,
+            "width": 77,
+            "height": 32,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "户口",
+          "left": 487,
+          "right": 514,
+          "top": 306,
+          "bottom": 320,
+          "height": 14,
+          "width": 27,
+          "mask": {},
+          "text": {
+            "value": "户口",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ],
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 486.96484375,
+              "ty": 317.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 14",
+          "left": 463,
+          "right": 540,
+          "top": 297,
+          "bottom": 329,
+          "height": 32,
+          "width": 77,
+          "mask": {
+            "top": 297,
+            "left": 463,
+            "bottom": 329,
+            "right": 540,
+            "width": 77,
+            "height": 32,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "其他",
+          "left": 432,
+          "right": 460,
+          "top": 344,
+          "bottom": 358,
+          "height": 14,
+          "width": 28,
+          "mask": {},
+          "text": {
+            "value": "其他",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ],
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 431.96484375,
+              "ty": 355.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 17",
+          "left": 409,
+          "right": 484,
+          "top": 336,
+          "bottom": 366,
+          "height": 30,
+          "width": 75,
+          "mask": {
+            "top": 336,
+            "left": 409,
+            "bottom": 366,
+            "right": 484,
+            "width": 75,
+            "height": 30,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "薪酬",
+          "left": 404,
+          "right": 432,
+          "top": 306,
+          "bottom": 320,
+          "height": 14,
+          "width": 28,
+          "mask": {},
+          "text": {
+            "value": "薪酬",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ],
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 403.96484375,
+              "ty": 317.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 13",
+          "left": 380,
+          "right": 457,
+          "top": 297,
+          "bottom": 329,
+          "height": 32,
+          "width": 77,
+          "mask": {
+            "top": 297,
+            "left": 380,
+            "bottom": 329,
+            "right": 457,
+            "width": 77,
+            "height": 32,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "工作内容",
+          "left": 321,
+          "right": 377,
+          "top": 344,
+          "bottom": 358,
+          "height": 14,
+          "width": 56,
+          "mask": {},
+          "text": {
+            "value": "工作内容",
+            "font": {
+              "lengthArray": [
+                1,
+                3
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ],
+                [
+                  102,
+                  102,
+                  102,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 320.96484375,
+              "ty": 355.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 16",
+          "left": 297,
+          "right": 401,
+          "top": 336,
+          "bottom": 366,
+          "height": 30,
+          "width": 104,
+          "mask": {
+            "top": 336,
+            "left": 297,
+            "bottom": 366,
+            "right": 401,
+            "width": 104,
+            "height": 30,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "地域",
+          "left": 321,
+          "right": 349,
+          "top": 306,
+          "bottom": 320,
+          "height": 14,
+          "width": 28,
+          "mask": {},
+          "text": {
+            "value": "地域",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "normal",
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                [
+                  255,
+                  255,
+                  255,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 320.96484375,
+              "ty": 317.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 12",
+          "left": 297,
+          "right": 374,
+          "top": 297,
+          "bottom": 329,
+          "height": 32,
+          "width": 77,
+          "mask": {
+            "top": 297,
+            "left": 297,
+            "bottom": 329,
+            "right": 374,
+            "width": 77,
+            "height": 32,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 7 拷贝 5",
+          "left": 164,
+          "right": 171,
+          "top": 474,
+          "bottom": 497,
+          "height": 23,
+          "width": 7,
+          "mask": {
+            "top": 474,
+            "left": 164,
+            "bottom": 497,
+            "right": 171,
+            "width": 7,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 7 拷贝 4",
+          "left": 164,
+          "right": 171,
+          "top": 142,
+          "bottom": 165,
+          "height": 23,
+          "width": 7,
+          "mask": {
+            "top": 142,
+            "left": 164,
+            "bottom": 165,
+            "right": 171,
+            "width": 7,
+            "height": 23,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "取消 拷贝 7",
+          "left": 532,
+          "right": 560,
+          "top": 827,
+          "bottom": 841,
+          "height": 14,
+          "width": 28,
+          "mask": {},
+          "text": {
+            "value": "取消",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  153,
+                  153,
+                  153,
+                  255
+                ],
+                [
+                  153,
+                  153,
+                  153,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 531.96484375,
+              "ty": 838.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 9",
+          "left": 494,
+          "right": 597,
+          "top": 816,
+          "bottom": 851,
+          "height": 35,
+          "width": 103,
+          "mask": {
+            "top": 816,
+            "left": 494,
+            "bottom": 851,
+            "right": 597,
+            "width": 103,
+            "height": 35,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "保存 拷贝 2",
+          "left": 422,
+          "right": 451,
+          "top": 827,
+          "bottom": 841,
+          "height": 14,
+          "width": 29,
+          "mask": {},
+          "text": {
+            "value": "保存",
+            "font": {
+              "lengthArray": [
+                1,
+                1
+              ],
+              "styles": [
+                "normal",
+                "normal"
+              ],
+              "weights": [
+                "bold",
+                "bold"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                14,
+                14
+              ],
+              "colors": [
+                [
+                  255,
+                  255,
+                  255,
+                  255
+                ],
+                [
+                  255,
+                  255,
+                  255,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none",
+                "none"
+              ],
+              "leading": [
+                24,
+                24
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 421.96484375,
+              "ty": 838.66015625
+            }
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 1 拷贝 9",
+          "left": 385,
+          "right": 488,
+          "top": 816,
+          "bottom": 851,
+          "height": 35,
+          "width": 103,
+          "mask": {
+            "top": 816,
+            "left": 385,
+            "bottom": 851,
+            "right": 488,
+            "width": 103,
+            "height": 35,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 107",
+          "left": 163,
+          "right": 817,
+          "top": 98,
+          "bottom": 130,
+          "height": 32,
+          "width": 654,
+          "mask": {
+            "top": 98,
+            "left": 163,
+            "bottom": 130,
+            "right": 817,
+            "width": 654,
+            "height": 32,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 2 拷贝 7",
+          "left": 164,
+          "right": 818,
+          "top": 97,
+          "bottom": 805,
+          "height": 708,
+          "width": 654,
+          "mask": {
+            "top": 97,
+            "left": 164,
+            "bottom": 805,
+            "right": 818,
+            "width": 654,
+            "height": 708,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        },
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "矩形 3 拷贝 7",
+          "left": 163,
+          "right": 818,
+          "top": 56,
+          "bottom": 865,
+          "height": 809,
+          "width": 655,
+          "mask": {
+            "top": 56,
+            "left": 163,
+            "bottom": 865,
+            "right": 818,
+            "width": 655,
+            "height": 809,
+            "defaultColor": 0,
+            "relative": false,
+            "disabled": false,
+            "invert": false
+          },
+          "image": {}
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 2",
+      "left": null,
+      "right": null,
+      "top": null,
+      "bottom": null,
+      "height": null,
+      "width": null,
+      "children": [
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "组 4 拷贝 3",
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "height": null,
+          "width": null,
+          "children": []
+        },
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "组 4 拷贝 2",
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "height": null,
+          "width": null,
+          "children": []
+        },
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "组 4 拷贝",
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "height": null,
+          "width": null,
+          "children": []
+        },
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "组 4",
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "height": null,
+          "width": null,
+          "children": []
+        },
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "组 3",
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "height": null,
+          "width": null,
+          "children": []
+        },
+        {
+          "type": "group",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "组 5",
+          "left": null,
+          "right": null,
+          "top": null,
+          "bottom": null,
+          "height": null,
+          "width": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "选择模板",
+      "left": null,
+      "right": null,
+      "top": null,
+      "bottom": null,
+      "height": null,
+      "width": null,
+      "children": []
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 1 拷贝 2",
+      "left": null,
+      "right": null,
+      "top": null,
+      "bottom": null,
+      "height": null,
+      "width": null,
+      "children": [
+        {
+          "type": "layer",
+          "visible": true,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "图层 1",
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "bottom": 0,
+          "height": 0,
+          "width": 0,
+          "mask": {},
+          "text": {
+            "value": "",
+            "font": {
+              "lengthArray": [
+                0
+              ],
+              "styles": [
+                "normal"
+              ],
+              "weights": [
+                "normal"
+              ],
+              "names": [
+                "MicrosoftYaHei",
+                "AdobeInvisFont",
+                "STFangsong",
+                "AdobeHeitiStd-Regular"
+              ],
+              "sizes": [
+                12
+              ],
+              "colors": [
+                [
+                  51,
+                  51,
+                  51,
+                  255
+                ]
+              ],
+              "alignment": [
+                "left"
+              ],
+              "textDecoration": [
+                "none"
+              ],
+              "leading": [
+                60
+              ]
+            },
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "transform": {
+              "xx": 1,
+              "xy": 0,
+              "yx": 0,
+              "yy": 1,
+              "tx": 359.0385438972162,
+              "ty": 347.5634266886327
+            }
+          },
+          "image": {}
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 1 拷贝 6",
+      "left": 436,
+      "right": 478,
+      "top": 377,
+      "bottom": 419,
+      "height": 42,
+      "width": 42,
+      "children": [
+        {
+          "type": "layer",
+          "visible": false,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "图层 142 副本 2 拷贝 9",
+          "left": 436,
+          "right": 478,
+          "top": 377,
+          "bottom": 419,
+          "height": 42,
+          "width": 42,
+          "mask": {},
+          "image": {}
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 1 拷贝 5",
+      "left": 197,
+      "right": 239,
+      "top": 377,
+      "bottom": 419,
+      "height": 42,
+      "width": 42,
+      "children": [
+        {
+          "type": "layer",
+          "visible": false,
+          "opacity": 1,
+          "blendingMode": "normal",
+          "name": "图层 142 副本 2 拷贝 9",
+          "left": 197,
+          "right": 239,
+          "top": 377,
+          "bottom": 419,
+          "height": 42,
+          "width": 42,
+          "mask": {},
+          "image": {}
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 1 拷贝 3",
+      "left": null,
+      "right": null,
+      "top": null,
+      "bottom": null,
+      "height": null,
+      "width": null,
+      "children": []
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 1 拷贝",
+      "left": null,
+      "right": null,
+      "top": null,
+      "bottom": null,
+      "height": null,
+      "width": null,
+      "children": []
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 1 拷贝 4",
+      "left": null,
+      "right": null,
+      "top": null,
+      "bottom": null,
+      "height": null,
+      "width": null,
+      "children": []
+    },
+    {
+      "type": "group",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "组 1",
+      "left": null,
+      "right": null,
+      "top": null,
+      "bottom": null,
+      "height": null,
+      "width": null,
+      "children": []
+    },
+    {
+      "type": "layer",
+      "visible": true,
+      "opacity": 1,
+      "blendingMode": "normal",
+      "name": "图层 0",
+      "left": 0,
+      "right": 938,
+      "top": 0,
+      "bottom": 1060,
+      "height": 1060,
+      "width": 938,
+      "mask": {},
+      "image": {}
+    }
+  ],
+  "document": {
+    "width": 938,
+    "height": 1060,
+    "resources": {
+      "layerComps": [],
+      "resolutionInfo": {
+        "h_res": 72,
+        "h_res_unit": 1,
+        "width_unit": 2,
+        "v_res": 72,
+        "v_res_unit": 1,
+        "height_unit": 2
+      },
+      "guides": [],
+      "slices": []
+    }
+  }
+}
