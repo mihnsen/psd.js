@@ -6,11 +6,11 @@ Layer = require './layer.coffee'
 # The layer mask is the overarching data structure that describes both
 # the layers/groups in the PSD document, and the global mask.
 # This part of the document is ordered as such:
-# 
+#
 # * Layers
 # * Layer images
 # * Global Mask
-# 
+#
 # The file does not need to have a global mask. If there is none, then
 # its length will be zero.
 module.exports = class LayerMask
@@ -20,7 +20,7 @@ module.exports = class LayerMask
     @globalMask = null
     @patterns = []
     @textInfo = []
-    
+
   skip: -> @file.seek @file.readInt(), true
 
   parse: ->
@@ -28,6 +28,9 @@ module.exports = class LayerMask
     finish = maskSize + @file.tell()
 
     return if maskSize <= 0
+
+    if @bitDepth == 16
+      @file.read(16)
 
     @parseLayers()
     @parseGlobalMask()
@@ -49,7 +52,7 @@ module.exports = class LayerMask
           when 'Patt', 'Pat2', 'Pat3' then @parsePatterns()
           when 'Txt2'                 then @parseTextInfo()
         @file.seek endSection
-            
+
     @file.seek finish
 
   parseLayers: ->
@@ -117,7 +120,7 @@ module.exports = class LayerMask
         channelData = pattern.data[24]
         for i in [0...numPixels]
           val = channelData[i]
-          pixelData[i*4 + 3] = val    
+          pixelData[i*4 + 3] = val
     ctx.putImageData(imageData, 0, 0)
     canvas.toDataURL("image/png")
 
@@ -158,7 +161,7 @@ module.exports = class LayerMask
               len = file.read(1)[0]
               if len < 128
                 len += 1
-                data = file.read(len)          
+                data = file.read(len)
                 pattern.data[i].set data, chanPos
                 chanPos += len
               else if len > 128
@@ -173,9 +176,9 @@ module.exports = class LayerMask
         file.seek endChannel
       file.seek VMALEnd
       pattern
-      
+
     readPattern = ->
-      patternEnd = ((file.readInt() + 3) & ~3) + file.tell()     
+      patternEnd = ((file.readInt() + 3) & ~3) + file.tell()
       file.seek 4, true # version
       mode = file.readInt()
       point = [file.readShort(), file.readShort()]
@@ -187,8 +190,8 @@ module.exports = class LayerMask
       file.seek patternEnd
 
     patternsEnd = file.readInt() + file.tell()
-    readPattern() while file.tell() < patternsEnd 
-    
+    readPattern() while file.tell() < patternsEnd
+
   parseTextInfo: ->
     textInfoLen = @file.readInt()
     if !textInfoLen
@@ -211,15 +214,15 @@ module.exports = class LayerMask
           l++
         @file.seek l+2, true
         rawText += ' "' + iconv.decode(new Buffer(d), 'utf16').replace(/\u0000/g, "").replace(/\t/gm, "\\t").replace(/\r/gm, "\\r").replace(/\n/gm, "\\n") + '",'
-      else if c == "<" and @file.data[@file.pos] == "<".charCodeAt(0)      
+      else if c == "<" and @file.data[@file.pos] == "<".charCodeAt(0)
         rawText += '{'
         @file.seek 1, true
-      else if c == ">" and @file.data[@file.pos] == ">".charCodeAt(0)      
+      else if c == ">" and @file.data[@file.pos] == ">".charCodeAt(0)
         rawText += '},'
         @file.seek 1, true
-      else if c == "]"      
+      else if c == "]"
         rawText += '],'
-      else if c == "." and [' ', '-'].includes(pc)      
+      else if c == "." and [' ', '-'].includes(pc)
         rawText += '0.'
       else
         rawText += c
