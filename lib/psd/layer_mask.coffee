@@ -58,6 +58,10 @@ module.exports = class LayerMask
   parseLayers: ->
     layerInfoSize = Util.pad2 @file.readInt()
 
+    if layerInfoSize is 0 and (@header.depth is 16 or @header.depth is 32)
+        @file.pos = @file.pos + 12
+        layerInfoSize = Util.pad2 @file.readInt()
+
     if layerInfoSize > 0
       layerCount = @file.readShort()
 
