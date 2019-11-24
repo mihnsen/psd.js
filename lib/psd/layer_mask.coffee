@@ -50,7 +50,6 @@ module.exports = class LayerMask
         @file.seek -4, true
         switch str
           when 'Patt', 'Pat2', 'Pat3' then @parsePatterns()
-          when 'Txt2'                 then @parseTextInfo()
         @file.seek endSection
 
     @file.seek finish
@@ -195,39 +194,3 @@ module.exports = class LayerMask
 
     patternsEnd = file.readInt() + file.tell()
     readPattern() while file.tell() < patternsEnd
-
-  parseTextInfo: ->
-    textInfoLen = @file.readInt()
-    if !textInfoLen
-      return
-    endTextInfo = ((textInfoLen + 3) & ~3) + @file.tell()
-    rawText = ""
-    c = ''
-    pc
-    while 1
-      if @file.pos >= endTextInfo
-        break
-      pc = c
-      c = @file.readString(1)
-      if c == '(' and pc == ' '
-        d = []
-        l = 0;
-        while @file.pos+l < endTextInfo and (@file.data[@file.pos+l] != ')'.charCodeAt(0) or @file.data[@file.pos+l+1] != 32 or @file.data[@file.pos+l-1] == '\\'.charCodeAt(0))
-          if !['('.charCodeAt(0), ')'.charCodeAt(0)].includes(@file.data[@file.pos+l+1]) || @file.data[@file.pos+l] != '\\'.charCodeAt(0)
-            d.push(@file.data[@file.pos+l])
-          l++
-        @file.seek l+2, true
-        rawText += ' "' + iconv.decode(new Buffer(d), 'utf16').replace(/\u0000/g, "").replace(/\t/gm, "\\t").replace(/\r/gm, "\\r").replace(/\n/gm, "\\n") + '",'
-      else if c == "<" and @file.data[@file.pos] == "<".charCodeAt(0)
-        rawText += '{'
-        @file.seek 1, true
-      else if c == ">" and @file.data[@file.pos] == ">".charCodeAt(0)
-        rawText += '},'
-        @file.seek 1, true
-      else if c == "]"
-        rawText += '],'
-      else if c == "." and [' ', '-'].includes(pc)
-        rawText += '0.'
-      else
-        rawText += c
-    @textInfo = JSON.parse(('{'+rawText+'}').replace(/ ?\/([\d]+)/g, "\"$1\":").replace(/\/([\w]+) ?/g,"\"$1\",").replace(/(false ?|true ?)/g, '$1,').replace(/"nil ?"/g, 'null,').replace(/([-\.\d]+) ?/g, "$1, ").replace(/, ?(,|}|\])/gm,"$1").replace(/\u0003/gm,"\\u0003").replace(/\u2029/gm,"\\u2029").replace(/"([\d]+), "/g,'"$1"'))
