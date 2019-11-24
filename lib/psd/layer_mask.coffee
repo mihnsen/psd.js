@@ -25,15 +25,22 @@ module.exports = class LayerMask
 
   parse: ->
     maskSize = @file.readInt()
-    finish = maskSize + @file.tell()
+    start_position = @file.tell()
+    finish = start_position + maskSize
 
     return if maskSize <= 0
 
     if @bitDepth == 16
       @file.read(16)
 
-    @parseLayers()
     @parseGlobalMask()
+    @parseLayers()
+
+    consumed_bytes = @file.tell() - start_position
+    parse_layer_tagged_blocks(mask_size - consumed_bytes)
+
+    # Ensure we're at the end of this section
+    @file.seek finish
 
     # The layers are stored in the reverse order that we would like them. In other
     # words, they're stored bottom to top and we want them top to bottom.
@@ -53,6 +60,27 @@ module.exports = class LayerMask
         @file.seek endSection
 
     @file.seek finish
+
+  parse_layer_tagged_blocks: (remaining_length) ->
+    start_pos = @file.tell()
+    read_bytes = 0
+
+    while read_bytes < remaining_length
+        res = parse_additional_layer_info_block
+        read_bytes = @file.tell() - start_pos
+
+    parse_additional_layer_info_block: ->
+      sig = @file.readString(4)
+
+      if sig != '8BIM' or sig != '8B64'
+        @file.seek -4, true
+        return false
+
+      key = @file.readString(4)
+
+      if key == 'Lr16' or key == 'Lr32'
+        parseLayers()
+        return true
 
   parseLayers: ->
     layerInfoSize = Util.pad2 @file.readInt()
