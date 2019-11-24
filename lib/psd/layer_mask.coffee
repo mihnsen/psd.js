@@ -19,28 +19,20 @@ module.exports = class LayerMask
     @mergedAlpha = false
     @globalMask = null
     @patterns = []
-    @textInfo = []
 
   skip: -> @file.seek @file.readInt(), true
 
   parse: ->
     maskSize = @file.readInt()
-    start_position = @file.tell()
-    finish = start_position + maskSize
+    finish = maskSize + @file.tell()
 
     return if maskSize <= 0
 
     if @bitDepth == 16
       @file.read(16)
 
-    @parseGlobalMask()
     @parseLayers()
-
-    consumed_bytes = @file.tell() - start_position
-    parse_layer_tagged_blocks(mask_size - consumed_bytes)
-
-    # Ensure we're at the end of this section
-    @file.seek finish
+    @parseGlobalMask()
 
     # The layers are stored in the reverse order that we would like them. In other
     # words, they're stored bottom to top and we want them top to bottom.
@@ -57,37 +49,17 @@ module.exports = class LayerMask
         @file.seek -4, true
         switch str
           when 'Patt', 'Pat2', 'Pat3' then @parsePatterns()
+          when 'Txt2'                 then @parseTextInfo()
         @file.seek endSection
 
     @file.seek finish
 
-  parse_layer_tagged_blocks: (remaining_length) ->
-    start_pos = @file.tell()
-    read_bytes = 0
-
-    while read_bytes < remaining_length
-        res = parse_additional_layer_info_block
-        read_bytes = @file.tell() - start_pos
-
-    parse_additional_layer_info_block: ->
-      sig = @file.readString(4)
-
-      if sig != '8BIM' or sig != '8B64'
-        @file.seek -4, true
-        return false
-
-      key = @file.readString(4)
-
-      if key == 'Lr16' or key == 'Lr32'
-        parseLayers()
-        return true
-
   parseLayers: ->
     layerInfoSize = Util.pad2 @file.readInt()
 
-    if layerInfoSize is 0 and (@header.depth is 16 or @header.depth is 32)
-        @file.pos = @file.pos + 12
-        layerInfoSize = Util.pad2 @file.readInt()
+    # if layerInfoSize is 0 and (@header.depth is 16 or @header.depth is 32)
+    #     @file.pos = @file.pos + 12
+    #     layerInfoSize = Util.pad2 @file.readInt()
 
     if layerInfoSize > 0
       layerCount = @file.readShort()
@@ -222,3 +194,38 @@ module.exports = class LayerMask
 
     patternsEnd = file.readInt() + file.tell()
     readPattern() while file.tell() < patternsEnd
+
+  parseTextInfo: ->
+    textInfoLen = @file.readInt()
+    if !textInfoLen
+      return
+    endTextInfo = ((textInfoLen + 3) & ~3) + @file.tell()
+    rawText = ""
+    c = ''
+    pc
+    while 1
+      if @file.pos >= endTextInfo
+        break
+      pc = c
+      c = @file.readString(1)
+      if c == '(' and pc == ' '
+        d = []
+        l = 0;
+        while @file.pos+l < endTextInfo and (@file.data[@file.pos+l] != ')'.charCodeAt(0) or @file.data[@file.pos+l+1] != 32 or @file.data[@file.pos+l-1] == '\\'.charCodeAt(0))
+          if !['('.charCodeAt(0), ')'.charCodeAt(0)].includes(@file.data[@file.pos+l+1]) || @file.data[@file.pos+l] != '\\'.charCodeAt(0)
+            d.push(@file.data[@file.pos+l])
+          l++
+        @file.seek l+2, true
+        rawText += ' "' + iconv.decode(new Buffer(d), 'utf16').replace(/\u0000/g, "").replace(/\t/gm, "\\t").replace(/\r/gm, "\\r").replace(/\n/gm, "\\n") + '",'
+      else if c == "<" and @file.data[@file.pos] == "<".charCodeAt(0)
+        rawText += '{'
+        @file.seek 1, true
+      else if c == ">" and @file.data[@file.pos] == ">".charCodeAt(0)
+        rawText += '},'
+        @file.seek 1, true
+      else if c == "]"
+        rawText += '],'
+      else if c == "." and [' ', '-'].includes(pc)
+        rawText += '0.'
+      else
+        rawText += c
