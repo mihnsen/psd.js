@@ -1,4 +1,5 @@
 _           = require 'lodash'
+zlib        = require 'zlib'
 Image       = require './image.coffee'
 ImageFormat = require './image_format.coffee'
 
