@@ -85,5 +85,5 @@ module.exports = class ChannelImage extends Image
     switch @compression
       when 0 then @parseRaw()
       when 1 then @parseRLE()
-      when 2, 3 then Zlib::Deflate.deflate(@file.read(@length))
+      when 2, 3 then zlib.createInflate(@file.read(@length).toString())._outBuffer
       else @file.seek(@endPos)
