@@ -1,10 +1,11 @@
 _           = require 'lodash'
+zlib        = require 'zlib'
 Image       = require './image.coffee'
 ImageFormat = require './image_format.coffee'
 
 # Represents an image for a single layer, which differs slightly in format from
 # the full size preview image.
-# 
+#
 # The full preview at the end of the PSD document has the same compression for all
 # channels, whereas layer images define the compression per color channel. The
 # dimensions can also differ per channel if we're parsing mask data (channel ID < -1).
@@ -79,9 +80,10 @@ module.exports = class ChannelImage extends Image
   # type for the entire image.
   parseImageData: ->
     @compression = @parseCompression()
+    require 'zlib'
 
     switch @compression
       when 0 then @parseRaw()
       when 1 then @parseRLE()
-      when 2, 3 then @parseZip()
+      when 2, 3 then zlib.createInflate(@file.read(@length).toString())._outBuffer
       else @file.seek(@endPos)

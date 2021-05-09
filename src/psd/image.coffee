@@ -15,7 +15,7 @@ module.exports = class Image extends Module
   @includes ImageMode.RGB
   @includes ImageMode.CMYK
   @includes Export.PNG
-  
+
   # Images can be 1 of 4 different compression types. RLE is the most prevalent, followed by
   # RAW. ZIP compression only happens under special circumstances, and is somewhat rare.
   COMPRESSIONS = [
@@ -86,7 +86,7 @@ module.exports = class Image extends Module
 
   # Parses the compression mode.
   parseCompression: -> @file.readShort()
-    
+
   # Parses the image data based on the compression mode.
   parseImageData: ->
     switch @compression
