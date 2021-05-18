@@ -76,11 +76,13 @@ module.exports = BlendMode = (function(superClass) {
 
 
 },{"coffeescript-module":undefined}],2:[function(require,module,exports){
-var ChannelImage, Image, ImageFormat, _,
+var ChannelImage, Image, ImageFormat, _, zlib,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
 
 _ = require('lodash');
+
+zlib = require('zlib');
 
 Image = require('./image.coffee');
 
@@ -161,6 +163,7 @@ module.exports = ChannelImage = (function(superClass) {
 
   ChannelImage.prototype.parseImageData = function() {
     this.compression = this.parseCompression();
+    require('zlib');
     switch (this.compression) {
       case 0:
         return this.parseRaw();
@@ -168,7 +171,7 @@ module.exports = ChannelImage = (function(superClass) {
         return this.parseRLE();
       case 2:
       case 3:
-        return this.parseZip();
+        return zlib.createInflate(this.file.read(this.length).toString())._outBuffer;
       default:
         return this.file.seek(this.endPos);
     }
@@ -179,7 +182,7 @@ module.exports = ChannelImage = (function(superClass) {
 })(Image);
 
 
-},{"./image.coffee":7,"./image_format.coffee":10,"lodash":undefined}],3:[function(require,module,exports){
+},{"./image.coffee":7,"./image_format.coffee":10,"lodash":undefined,"zlib":undefined}],3:[function(require,module,exports){
 var Util;
 
 Util = require('./util.coffee');
@@ -195,7 +198,7 @@ module.exports = {
 };
 
 
-},{"./util.coffee":67}],4:[function(require,module,exports){
+},{"./util.coffee":69}],4:[function(require,module,exports){
 var Descriptor;
 
 module.exports = Descriptor = (function() {
@@ -583,6 +586,10 @@ module.exports = File = (function() {
     return this.read(1)[0];
   };
 
+  File.prototype.readChar = function() {
+    return new Int8Array(this.read(1))[0];
+  };
+
   File.prototype.readBoolean = function() {
     return this.readByte() !== 0;
   };
@@ -601,7 +608,7 @@ module.exports = File = (function() {
 
   File.prototype.readPathNumber = function() {
     var a, arr, b, b1, b2, b3;
-    a = this.readByte();
+    a = this.readChar();
     arr = this.read(3);
     b1 = arr[0] << 16;
     b2 = arr[1] << 8;
@@ -616,7 +623,7 @@ module.exports = File = (function() {
 
 
 }).call(this,require("buffer").Buffer)
-},{"./color.coffee":3,"./util.coffee":67,"buffer":undefined,"iconv-lite":undefined,"jspack":undefined}],6:[function(require,module,exports){
+},{"./color.coffee":3,"./util.coffee":69,"buffer":undefined,"iconv-lite":undefined,"jspack":undefined}],6:[function(require,module,exports){
 var Header, Module,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1341,7 +1348,7 @@ module.exports = {
 };
 
 
-},{"../channel_image.coffee":2,"../lazy_execute.coffee":51}],24:[function(require,module,exports){
+},{"../channel_image.coffee":2,"../lazy_execute.coffee":52}],24:[function(require,module,exports){
 module.exports = {
   isFolder: function() {
     if (this.adjustments['sectionDivider'] != null) {
@@ -1388,6 +1395,7 @@ LAYER_INFO = {
   objectEffects: require('../layer_info/object_effects.coffee'),
   sectionDivider: require('../layer_info/section_divider.coffee'),
   solidColor: require('../layer_info/solid_color.coffee'),
+  gradientMap: require('../layer_info/gradient_map.coffee'),
   typeTool: require('../layer_info/typetool.coffee'),
   vectorMask: require('../layer_info/vector_mask.coffee'),
   vectorOrigination: require('../layer_info/vector_origination.coffee'),
@@ -1437,7 +1445,7 @@ module.exports = {
 };
 
 
-},{"../layer_info/artboard.coffee":30,"../layer_info/blend_clipping_elements.coffee":31,"../layer_info/blend_interior_elements.coffee":32,"../layer_info/fill_opacity.coffee":33,"../layer_info/gradient_fill.coffee":34,"../layer_info/layer_id.coffee":35,"../layer_info/layer_name_source.coffee":36,"../layer_info/legacy_typetool.coffee":37,"../layer_info/locked.coffee":38,"../layer_info/metadata.coffee":39,"../layer_info/nested_section_divider.coffee":40,"../layer_info/object_effects.coffee":41,"../layer_info/section_divider.coffee":42,"../layer_info/solid_color.coffee":43,"../layer_info/typetool.coffee":44,"../layer_info/unicode_name.coffee":45,"../layer_info/vector_mask.coffee":46,"../layer_info/vector_origination.coffee":47,"../layer_info/vector_stroke.coffee":48,"../layer_info/vector_stroke_content.coffee":49,"../lazy_execute.coffee":51,"../util.coffee":67}],26:[function(require,module,exports){
+},{"../layer_info/artboard.coffee":30,"../layer_info/blend_clipping_elements.coffee":31,"../layer_info/blend_interior_elements.coffee":32,"../layer_info/fill_opacity.coffee":33,"../layer_info/gradient_fill.coffee":34,"../layer_info/gradient_map.coffee":35,"../layer_info/layer_id.coffee":36,"../layer_info/layer_name_source.coffee":37,"../layer_info/legacy_typetool.coffee":38,"../layer_info/locked.coffee":39,"../layer_info/metadata.coffee":40,"../layer_info/nested_section_divider.coffee":41,"../layer_info/object_effects.coffee":42,"../layer_info/section_divider.coffee":43,"../layer_info/solid_color.coffee":44,"../layer_info/typetool.coffee":45,"../layer_info/unicode_name.coffee":46,"../layer_info/vector_mask.coffee":47,"../layer_info/vector_origination.coffee":48,"../layer_info/vector_stroke.coffee":49,"../layer_info/vector_stroke_content.coffee":50,"../lazy_execute.coffee":52,"../util.coffee":69}],26:[function(require,module,exports){
 var Mask;
 
 Mask = require('../mask.coffee');
@@ -1449,7 +1457,7 @@ module.exports = {
 };
 
 
-},{"../mask.coffee":52}],27:[function(require,module,exports){
+},{"../mask.coffee":53}],27:[function(require,module,exports){
 var Util;
 
 Util = require('../util.coffee');
@@ -1463,7 +1471,7 @@ module.exports = {
 };
 
 
-},{"../util.coffee":67}],28:[function(require,module,exports){
+},{"../util.coffee":69}],28:[function(require,module,exports){
 module.exports = {
   parsePositionAndChannels: function() {
     var i, id, j, length, ref, results;
@@ -1620,16 +1628,21 @@ LayerInfo = require('../layer_info.coffee');
 module.exports = FillOpacity = (function(superClass) {
   extend(FillOpacity, superClass);
 
-  function FillOpacity() {
-    return FillOpacity.__super__.constructor.apply(this, arguments);
-  }
-
   FillOpacity.shouldParse = function(key) {
     return key === 'iOpa';
   };
 
+  function FillOpacity(layer, length) {
+    FillOpacity.__super__.constructor.call(this, layer, length);
+    this.value = 255;
+  }
+
   FillOpacity.prototype.parse = function() {
     return this.value = this.file.readByte();
+  };
+
+  FillOpacity.prototype.opacity = function() {
+    return this.value;
   };
 
   return FillOpacity;
@@ -1638,13 +1651,15 @@ module.exports = FillOpacity = (function(superClass) {
 
 
 },{"../layer_info.coffee":29}],34:[function(require,module,exports){
-var Descriptor, GradientFill, LayerInfo,
+var Color, Descriptor, GradientFill, LayerInfo,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
 
 LayerInfo = require('../layer_info.coffee');
 
 Descriptor = require('../descriptor.coffee');
+
+Color = require('../color.coffee');
 
 module.exports = GradientFill = (function(superClass) {
   extend(GradientFill, superClass);
@@ -1662,12 +1677,106 @@ module.exports = GradientFill = (function(superClass) {
     return this.data = new Descriptor(this.file).parse();
   };
 
+  GradientFill.prototype.colors = function() {
+    var c, clrs, i;
+    clrs = [];
+    i = this.data.Grad.Clrs.length;
+    while (i > 0) {
+      c = this.data.Grad.Clrs[i - 1]['Clr '];
+      if (c["class"].id === 'RGBC') {
+        clrs.unshift([c['Rd  '], c['Grn '], c['Bl  ']]);
+      } else {
+        clrs.unshift(Color.cmykToRgb(2.55 * c['Cyn '], 2.55 * c['Mgnt'], 2.55 * c['Ylw '], 2.55 * c['Blck']));
+      }
+      i--;
+    }
+    return clrs;
+  };
+
   return GradientFill;
 
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29}],35:[function(require,module,exports){
+},{"../color.coffee":3,"../descriptor.coffee":4,"../layer_info.coffee":29}],35:[function(require,module,exports){
+var Descriptor, GradientMap, LayerInfo,
+  extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+  hasProp = {}.hasOwnProperty;
+
+LayerInfo = require('../layer_info.coffee');
+
+Descriptor = require('../descriptor.coffee');
+
+module.exports = GradientMap = (function(superClass) {
+  extend(GradientMap, superClass);
+
+  GradientMap.shouldParse = function(key) {
+    return key === 'grdm';
+  };
+
+  function GradientMap(layer, length) {
+    GradientMap.__super__.constructor.call(this, layer, length);
+    this.gradient = {};
+    this.gradient.inverted = false;
+    this.gradient.dithered = false;
+  }
+
+  GradientMap.prototype.parse = function() {
+    var c, cs, grad, transp;
+    this.file.seek(2, true);
+    this.gradient.inverted = this.file.readBoolean();
+    this.gradient.dithered = this.file.readBoolean();
+    this.gradient.name = this.file.readUnicodeString();
+    this.gradient.stops = [];
+    c = this.file.readUShort();
+    while (c > 0) {
+      grad = {};
+      grad.location = this.file.readUInt();
+      grad.midPoint = this.file.readUInt();
+      grad.mode = this.file.readUShort();
+      grad.color = [];
+      cs = 0;
+      while (cs < this.layer.channels) {
+        grad.color.push(this.file.readUShort() / 256);
+        cs++;
+      }
+      this.gradient.stops.push(grad);
+      c--;
+    }
+    this.gradient.transparencies = [];
+    c = this.file.readUShort();
+    while (c > 0) {
+      transp = {};
+      transp.location = this.file.readUInt();
+      transp.midPoint = this.file.readUInt();
+      transp.opacity = this.file.readUShort();
+      this.gradient.transparencies.push(transp);
+      c--;
+    }
+    this.gradient.expansionCount = this.file.readUShort();
+    this.gradient.interpolation = this.file.readUShort();
+    this.gradient.length = this.file.readUShort();
+    this.gradient.mode = this.file.readUShort();
+    this.gradient.seed = this.file.readInt();
+    this.gradient.showTransparency = this.file.readUShort();
+    this.gradient.useColor = this.file.readUShort();
+    this.gradient.roughness = this.file.readInt();
+    this.gradient.colorModel = this.file.readUShort();
+    this.gradient.minColor = [this.file.readUShort() / 256, this.file.readUShort() / 256, this.file.readUShort() / 256, this.file.readUShort() / 256];
+    this.gradient.maxColor = [this.file.readUShort() / 256, this.file.readUShort() / 256, this.file.readUShort() / 256, this.file.readUShort() / 256];
+    return this.file.readUShort();
+  };
+
+  GradientMap.prototype.gradientMap = function() {
+    return this.gradient;
+  };
+
+  return GradientMap;
+
+})(LayerInfo);
+
+
+},{"../descriptor.coffee":4,"../layer_info.coffee":29}],36:[function(require,module,exports){
 var LayerId, LayerInfo,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1694,7 +1803,7 @@ module.exports = LayerId = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../layer_info.coffee":29}],36:[function(require,module,exports){
+},{"../layer_info.coffee":29}],37:[function(require,module,exports){
 var LayerInfo, LayerNameSource,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1721,7 +1830,7 @@ module.exports = LayerNameSource = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../layer_info.coffee":29}],37:[function(require,module,exports){
+},{"../layer_info.coffee":29}],38:[function(require,module,exports){
 var LegacyTypeTool, TypeTool, _,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1823,7 +1932,7 @@ module.exports = LegacyTypeTool = (function(superClass) {
 })(TypeTool);
 
 
-},{"./typetool.coffee":44,"lodash":undefined}],38:[function(require,module,exports){
+},{"./typetool.coffee":45,"lodash":undefined}],39:[function(require,module,exports){
 var LayerInfo, Locked,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1859,7 +1968,7 @@ module.exports = Locked = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../layer_info.coffee":29}],39:[function(require,module,exports){
+},{"../layer_info.coffee":29}],40:[function(require,module,exports){
 var Descriptor, LayerInfo, Metadata,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1908,7 +2017,7 @@ module.exports = Metadata = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29}],40:[function(require,module,exports){
+},{"../descriptor.coffee":4,"../layer_info.coffee":29}],41:[function(require,module,exports){
 var LayerInfo, NestedSectionDivider,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1945,7 +2054,7 @@ module.exports = NestedSectionDivider = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../layer_info.coffee":29}],41:[function(require,module,exports){
+},{"../layer_info.coffee":29}],42:[function(require,module,exports){
 var Descriptor, LayerInfo, ObjectEffects,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -1962,7 +2071,7 @@ module.exports = ObjectEffects = (function(superClass) {
   }
 
   ObjectEffects.shouldParse = function(key) {
-    return key === 'lfx2';
+    return key === 'lfx2' || key === 'lmfx';
   };
 
   ObjectEffects.prototype.parse = function() {
@@ -1975,7 +2084,7 @@ module.exports = ObjectEffects = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29}],42:[function(require,module,exports){
+},{"../descriptor.coffee":4,"../layer_info.coffee":29}],43:[function(require,module,exports){
 var LayerInfo, NestedSectionDivider,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -2030,14 +2139,16 @@ module.exports = NestedSectionDivider = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../layer_info.coffee":29}],43:[function(require,module,exports){
-var Descriptor, LayerInfo, SolidColor,
+},{"../layer_info.coffee":29}],44:[function(require,module,exports){
+var Color, Descriptor, LayerInfo, SolidColor,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
 
 LayerInfo = require('../layer_info.coffee');
 
 Descriptor = require('../descriptor.coffee');
+
+Color = require('../color.coffee');
 
 module.exports = SolidColor = (function(superClass) {
   extend(SolidColor, superClass);
@@ -2048,15 +2159,19 @@ module.exports = SolidColor = (function(superClass) {
 
   function SolidColor(layer, length) {
     SolidColor.__super__.constructor.call(this, layer, length);
-    this.r = this.g = this.b = 0;
+    this.clr = [0, 0, 0];
   }
 
   SolidColor.prototype.parse = function() {
+    var c;
     this.file.seek(4, true);
     this.data = new Descriptor(this.file).parse();
-    this.r = Math.round(this.colorData()['Rd  ']);
-    this.g = Math.round(this.colorData()['Grn ']);
-    return this.b = Math.round(this.colorData()['Bl  ']);
+    c = this.colorData();
+    if (this.data['Clr ']["class"].id === 'RGBC') {
+      return this.clr = [Math.round(c['Rd  ']), Math.round(c['Grn ']), Math.round(c['Bl  '])];
+    } else {
+      return this.clr = Color.cmykToRgb(2.55 * c['Cyn '], 2.55 * c['Mgnt'], 2.55 * c['Ylw '], 2.55 * c['Blck']);
+    }
   };
 
   SolidColor.prototype.colorData = function() {
@@ -2064,7 +2179,7 @@ module.exports = SolidColor = (function(superClass) {
   };
 
   SolidColor.prototype.color = function() {
-    return [this.r, this.g, this.b];
+    return this.clr;
   };
 
   return SolidColor;
@@ -2072,8 +2187,8 @@ module.exports = SolidColor = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29}],44:[function(require,module,exports){
-var Descriptor, LayerInfo, TextElements, _, parseEngineData,
+},{"../color.coffee":3,"../descriptor.coffee":4,"../layer_info.coffee":29}],45:[function(require,module,exports){
+var Color, Descriptor, LayerInfo, TextElements, _, parseEngineData,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
 
@@ -2084,6 +2199,8 @@ parseEngineData = require('parse-engine-data');
 LayerInfo = require('../layer_info.coffee');
 
 Descriptor = require('../descriptor.coffee');
+
+Color = require('../color.coffee');
 
 module.exports = TextElements = (function(superClass) {
   var COORDS_VALUE, TRANSFORM_VALUE;
@@ -2256,6 +2373,9 @@ module.exports = TextElements = (function(superClass) {
         return Math.round(v * 255);
       });
       values.push(values.shift());
+      if (s.Type === 2) {
+        values = Color.cmykToRgb(values[0], values[1], values[2], values[3]).concat(values[4]);
+      }
       return values;
     });
   };
@@ -2329,7 +2449,7 @@ module.exports = TextElements = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29,"lodash":undefined,"parse-engine-data":undefined}],45:[function(require,module,exports){
+},{"../color.coffee":3,"../descriptor.coffee":4,"../layer_info.coffee":29,"lodash":undefined,"parse-engine-data":undefined}],46:[function(require,module,exports){
 var LayerInfo, UnicodeName,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -2360,7 +2480,7 @@ module.exports = UnicodeName = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../layer_info.coffee":29}],46:[function(require,module,exports){
+},{"../layer_info.coffee":29}],47:[function(require,module,exports){
 var LayerInfo, PathRecord, VectorMask,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -2417,7 +2537,7 @@ module.exports = VectorMask = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../layer_info.coffee":29,"../path_record.coffee":60}],47:[function(require,module,exports){
+},{"../layer_info.coffee":29,"../path_record.coffee":61}],48:[function(require,module,exports){
 var Descriptor, LayerInfo, VectorOrigination,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -2447,7 +2567,7 @@ module.exports = VectorOrigination = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29}],48:[function(require,module,exports){
+},{"../descriptor.coffee":4,"../layer_info.coffee":29}],49:[function(require,module,exports){
 var Descriptor, LayerInfo, VectorStroke,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -2477,7 +2597,7 @@ module.exports = VectorStroke = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29}],49:[function(require,module,exports){
+},{"../descriptor.coffee":4,"../layer_info.coffee":29}],50:[function(require,module,exports){
 var Descriptor, LayerInfo, VectorStrokeContent,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -2507,22 +2627,26 @@ module.exports = VectorStrokeContent = (function(superClass) {
 })(LayerInfo);
 
 
-},{"../descriptor.coffee":4,"../layer_info.coffee":29}],50:[function(require,module,exports){
-var Layer, LayerMask, Util, _;
+},{"../descriptor.coffee":4,"../layer_info.coffee":29}],51:[function(require,module,exports){
+(function (Buffer){
+var Layer, LayerMask, Util, _, iconv;
 
 _ = require('lodash');
+
+iconv = require('iconv-lite');
 
 Util = require('./util.coffee');
 
 Layer = require('./layer.coffee');
 
 module.exports = LayerMask = (function() {
-  function LayerMask(file, header) {
-    this.file = file;
+  function LayerMask(file1, header) {
+    this.file = file1;
     this.header = header;
     this.layers = [];
     this.mergedAlpha = false;
     this.globalMask = null;
+    this.patterns = [];
   }
 
   LayerMask.prototype.skip = function() {
@@ -2530,34 +2654,62 @@ module.exports = LayerMask = (function() {
   };
 
   LayerMask.prototype.parse = function() {
-    var finish, maskSize;
+    var endSection, finish, maskSize, sectionLen, str;
     maskSize = this.file.readInt();
     finish = maskSize + this.file.tell();
     if (maskSize <= 0) {
       return;
     }
+    if (this.bitDepth === 16) {
+      this.file.read(16);
+    }
     this.parseLayers();
     this.parseGlobalMask();
     this.layers.reverse();
+    while (this.file.pos < finish && !this.file.data[this.file.pos]) {
+      this.file.seek(1, true);
+    }
+    while (this.file.pos < finish && this.file.readString(4) === '8BIM') {
+      str = this.file.readString(4);
+      sectionLen = this.file.readInt();
+      endSection = ((sectionLen + 3) & ~3) + this.file.tell();
+      if (sectionLen > 0) {
+        this.file.seek(-4, true);
+        switch (str) {
+          case 'Patt':
+          case 'Pat2':
+          case 'Pat3':
+            this.parsePatterns();
+            break;
+          case 'Txt2':
+            this.parseTextInfo();
+        }
+        this.file.seek(endSection);
+      }
+    }
     return this.file.seek(finish);
   };
 
   LayerMask.prototype.parseLayers = function() {
-    var i, j, k, layer, layerCount, layerInfoSize, len, ref, ref1, results;
+    var i, k, layer, layerCount, layerInfoSize, len1, m, ref, ref1, results;
     layerInfoSize = Util.pad2(this.file.readInt());
+    if (layerInfoSize === 0 && (this.header.depth === 16 || this.header.depth === 32)) {
+      this.file.pos = this.file.pos + 12;
+      layerInfoSize = Util.pad2(this.file.readInt());
+    }
     if (layerInfoSize > 0) {
       layerCount = this.file.readShort();
       if (layerCount < 0) {
         layerCount = Math.abs(layerCount);
         this.mergedAlpha = true;
       }
-      for (i = j = 0, ref = layerCount; 0 <= ref ? j < ref : j > ref; i = 0 <= ref ? ++j : --j) {
+      for (i = k = 0, ref = layerCount; 0 <= ref ? k < ref : k > ref; i = 0 <= ref ? ++k : --k) {
         this.layers.push(new Layer(this.file, this.header).parse());
       }
       ref1 = this.layers;
       results = [];
-      for (k = 0, len = ref1.length; k < len; k++) {
-        layer = ref1[k];
+      for (m = 0, len1 = ref1.length; m < len1; m++) {
+        layer = ref1[m];
         results.push(layer.parseChannelImage());
       }
       return results;
@@ -2570,7 +2722,7 @@ module.exports = LayerMask = (function() {
     if (length <= 0) {
       return;
     }
-    maskEnd = this.file.tell() + length;
+    maskEnd = this.file.tell() + length + 3;
     this.globalMask = _({}).tap((function(_this) {
       return function(mask) {
         mask.overlayColorSpace = _this.file.readShort();
@@ -2582,12 +2734,197 @@ module.exports = LayerMask = (function() {
     return this.file.seek(maskEnd);
   };
 
+  LayerMask.prototype.getPatternAsPNG = function(pattern) {
+    var a, b, canvas, chan, channelData, ctx, g, i, imageData, k, m, n, nbChannels, numPixels, pixelData, r, ref, ref1, ref2, val;
+    canvas = document.createElement('canvas');
+    canvas.width = pattern.width;
+    canvas.height = pattern.height;
+    ctx = canvas.getContext('2d');
+    imageData = ctx.createImageData(pattern.width, pattern.height);
+    pixelData = imageData.data;
+    numPixels = pattern.width * pattern.height;
+    nbChannels = pattern.data.slice(0, 24).length;
+    for (i = k = 0, ref = numPixels; 0 <= ref ? k < ref : k > ref; i = 0 <= ref ? ++k : --k) {
+      r = g = b = 0;
+      a = 255;
+      for (chan = m = 0, ref1 = nbChannels; 0 <= ref1 ? m < ref1 : m > ref1; chan = 0 <= ref1 ? ++m : --m) {
+        channelData = pattern.data[chan];
+        val = channelData[i];
+        switch (chan) {
+          case 0:
+            r = val;
+            break;
+          case 1:
+            g = val;
+            break;
+          case 2:
+            b = val;
+            break;
+          case 3:
+            a = val;
+        }
+      }
+      pixelData.set([r, g, b, a], i * 4);
+      if (pattern.data[24]) {
+        channelData = pattern.data[24];
+        for (i = n = 0, ref2 = numPixels; 0 <= ref2 ? n < ref2 : n > ref2; i = 0 <= ref2 ? ++n : --n) {
+          val = channelData[i];
+          pixelData[i * 4 + 3] = val;
+        }
+      }
+    }
+    ctx.putImageData(imageData, 0, 0);
+    return canvas.toDataURL("image/png");
+  };
+
+  LayerMask.prototype.parsePatterns = function() {
+    var file, getPatternAsPNG, patterns, patternsEnd, readPattern, readVirtualMemoryArrayList, results;
+    file = this.file;
+    patterns = this.patterns;
+    getPatternAsPNG = this.getPatternAsPNG;
+    readVirtualMemoryArrayList = function() {
+      var VMALEnd, byteCounts, chanPos, compressed, data, depth, endChannel, finish, i, j, k, l, len, lineIndex, m, n, pattern, ref, ref1, ref2, val;
+      file.seek(4, true);
+      VMALEnd = file.readInt() + file.tell();
+      pattern = {
+        top: file.readInt(),
+        left: file.readInt(),
+        bottom: file.readInt(),
+        right: file.readInt(),
+        channels: file.readInt(),
+        data: []
+      };
+      pattern.width = pattern.right - pattern.left;
+      pattern.height = pattern.bottom - pattern.top;
+      pattern.toURL = function() {
+        return getPatternAsPNG(this);
+      };
+      for (i = k = 0, ref = pattern.channels + 2; 0 <= ref ? k < ref : k > ref; i = 0 <= ref ? ++k : --k) {
+        lineIndex = 0;
+        chanPos = 0;
+        if (!file.readInt()) {
+          continue;
+        }
+        l = file.readInt();
+        endChannel = l + file.tell();
+        depth = file.readInt();
+        file.readInt();
+        file.readInt();
+        file.readInt();
+        file.readInt();
+        file.readShort();
+        compressed = file.readByte();
+        if (compressed) {
+          byteCounts = [];
+          pattern.data[i] = new Uint8Array(pattern.width * pattern.height);
+          for (j = m = 0, ref1 = pattern.height; 0 <= ref1 ? m < ref1 : m > ref1; j = 0 <= ref1 ? ++m : --m) {
+            byteCounts.push(file.readShort());
+          }
+          for (j = n = 0, ref2 = pattern.height; 0 <= ref2 ? n < ref2 : n > ref2; j = 0 <= ref2 ? ++n : --n) {
+            finish = file.tell() + byteCounts[lineIndex + j];
+            while (file.tell() < finish) {
+              len = file.read(1)[0];
+              if (len < 128) {
+                len += 1;
+                data = file.read(len);
+                pattern.data[i].set(data, chanPos);
+                chanPos += len;
+              } else if (len > 128) {
+                len ^= 0xff;
+                len += 2;
+                val = file.read(1)[0];
+                pattern.data[i].fill(val, chanPos, chanPos + len);
+                chanPos += len;
+              }
+            }
+          }
+          lineIndex += pattern.height;
+        } else {
+          pattern.data[i] = new Uint8Array(file.read(l - 23));
+        }
+        file.seek(endChannel);
+      }
+      file.seek(VMALEnd);
+      return pattern;
+    };
+    readPattern = function() {
+      var mode, pattern, patternEnd, point;
+      patternEnd = ((file.readInt() + 3) & ~3) + file.tell();
+      file.seek(4, true);
+      mode = file.readInt();
+      point = [file.readShort(), file.readShort()];
+      pattern = {
+        name: file.readUnicodeString(),
+        id: file.readString(file.readByte()),
+        palette: []
+      };
+      if (mode === 2) {
+        pattern.palette = file.read(256 * 3);
+      }
+      pattern.data = readVirtualMemoryArrayList();
+      patterns.push(pattern);
+      return file.seek(patternEnd);
+    };
+    patternsEnd = file.readInt() + file.tell();
+    results = [];
+    while (file.tell() < patternsEnd) {
+      results.push(readPattern());
+    }
+    return results;
+  };
+
+  LayerMask.prototype.parseTextInfo = function() {
+    var c, d, endTextInfo, l, pc, rawText, results, textInfoLen;
+    textInfoLen = this.file.readInt();
+    if (!textInfoLen) {
+      return;
+    }
+    endTextInfo = ((textInfoLen + 3) & ~3) + this.file.tell();
+    rawText = "";
+    c = '';
+    pc;
+    results = [];
+    while (1) {
+      if (this.file.pos >= endTextInfo) {
+        break;
+      }
+      pc = c;
+      c = this.file.readString(1);
+      if (c === '(' && pc === ' ') {
+        d = [];
+        l = 0;
+        while (this.file.pos + l < endTextInfo && (this.file.data[this.file.pos + l] !== ')'.charCodeAt(0) || this.file.data[this.file.pos + l + 1] !== 32 || this.file.data[this.file.pos + l - 1] === '\\'.charCodeAt(0))) {
+          if (!['('.charCodeAt(0), ')'.charCodeAt(0)].includes(this.file.data[this.file.pos + l + 1]) || this.file.data[this.file.pos + l] !== '\\'.charCodeAt(0)) {
+            d.push(this.file.data[this.file.pos + l]);
+          }
+          l++;
+        }
+        this.file.seek(l + 2, true);
+        results.push(rawText += ' "' + iconv.decode(new Buffer(d), 'utf16').replace(/\u0000/g, "").replace(/\t/gm, "\\t").replace(/\r/gm, "\\r").replace(/\n/gm, "\\n") + '",');
+      } else if (c === "<" && this.file.data[this.file.pos] === "<".charCodeAt(0)) {
+        rawText += '{';
+        results.push(this.file.seek(1, true));
+      } else if (c === ">" && this.file.data[this.file.pos] === ">".charCodeAt(0)) {
+        rawText += '},';
+        results.push(this.file.seek(1, true));
+      } else if (c === "]") {
+        results.push(rawText += '],');
+      } else if (c === "." && [' ', '-'].includes(pc)) {
+        results.push(rawText += '0.');
+      } else {
+        results.push(rawText += c);
+      }
+    }
+    return results;
+  };
+
   return LayerMask;
 
 })();
 
 
-},{"./layer.coffee":20,"./util.coffee":67,"lodash":undefined}],51:[function(require,module,exports){
+}).call(this,require("buffer").Buffer)
+},{"./layer.coffee":20,"./util.coffee":69,"buffer":undefined,"iconv-lite":undefined,"lodash":undefined}],52:[function(require,module,exports){
 var LazyExecute,
   slice = [].slice,
   indexOf = [].indexOf || function(item) { for (var i = 0, l = this.length; i < l; i++) { if (i in this && this[i] === item) return i; } return -1; };
@@ -2664,7 +3001,7 @@ module.exports = LazyExecute = (function() {
 })();
 
 
-},{}],52:[function(require,module,exports){
+},{}],53:[function(require,module,exports){
 var Mask;
 
 module.exports = Mask = (function() {
@@ -2721,7 +3058,7 @@ module.exports = Mask = (function() {
 })();
 
 
-},{}],53:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 var Module, Node, _,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -2912,7 +3249,7 @@ module.exports = Node = (function(superClass) {
 })(Module);
 
 
-},{"./nodes/ancestry.coffee":54,"./nodes/build_preview.coffee":55,"./nodes/search.coffee":59,"coffeescript-module":undefined,"lodash":undefined}],54:[function(require,module,exports){
+},{"./nodes/ancestry.coffee":55,"./nodes/build_preview.coffee":56,"./nodes/search.coffee":60,"coffeescript-module":undefined,"lodash":undefined}],55:[function(require,module,exports){
 var _;
 
 _ = require('lodash');
@@ -2998,7 +3335,7 @@ module.exports = {
 };
 
 
-},{"lodash":undefined}],55:[function(require,module,exports){
+},{"lodash":undefined}],56:[function(require,module,exports){
 module.exports = {
   toPng: function() {
     return this.layer.image.toPng();
@@ -3009,7 +3346,7 @@ module.exports = {
 };
 
 
-},{}],56:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 var Group, Node, _,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -3061,7 +3398,7 @@ module.exports = Group = (function(superClass) {
 })(Node);
 
 
-},{"../node.coffee":53,"lodash":undefined}],57:[function(require,module,exports){
+},{"../node.coffee":54,"lodash":undefined}],58:[function(require,module,exports){
 var Layer, Node, _,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -3098,7 +3435,7 @@ module.exports = Layer = (function(superClass) {
 })(Node);
 
 
-},{"../node.coffee":53,"lodash":undefined}],58:[function(require,module,exports){
+},{"../node.coffee":54,"lodash":undefined}],59:[function(require,module,exports){
 var Group, Layer, Node, Root, _,
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -3198,7 +3535,7 @@ module.exports = Root = (function(superClass) {
 })(Node);
 
 
-},{"../node.coffee":53,"./group.coffee":56,"./layer.coffee":57,"lodash":undefined}],59:[function(require,module,exports){
+},{"../node.coffee":54,"./group.coffee":57,"./layer.coffee":58,"lodash":undefined}],60:[function(require,module,exports){
 var _;
 
 _ = require('lodash');
@@ -3234,7 +3571,7 @@ module.exports = {
 };
 
 
-},{"lodash":undefined}],60:[function(require,module,exports){
+},{"lodash":undefined}],61:[function(require,module,exports){
 var PathRecord, _;
 
 _ = require('lodash');
@@ -3356,7 +3693,7 @@ module.exports = PathRecord = (function() {
 })();
 
 
-},{"lodash":undefined}],61:[function(require,module,exports){
+},{"lodash":undefined}],62:[function(require,module,exports){
 var Resource, Util;
 
 Util = require('./util.coffee');
@@ -3385,7 +3722,7 @@ module.exports = Resource = (function() {
 })();
 
 
-},{"./resource_section.coffee":62,"./util.coffee":67}],62:[function(require,module,exports){
+},{"./resource_section.coffee":63,"./util.coffee":69}],63:[function(require,module,exports){
 var ResourceSection, _;
 
 _ = require('lodash');
@@ -3395,7 +3732,7 @@ module.exports = ResourceSection = (function() {
 
   function ResourceSection() {}
 
-  RESOURCES = [require('./resources/layer_comps.coffee'), require('./resources/layer_links.coffee'), require('./resources/resolution_info.coffee')];
+  RESOURCES = [require('./resources/layer_comps.coffee'), require('./resources/layer_links.coffee'), require('./resources/resolution_info.coffee'), require('./resources/angle.coffee')];
 
   ResourceSection.factory = function(resource) {
     var Section, i, len;
@@ -3416,7 +3753,7 @@ module.exports = ResourceSection = (function() {
 })();
 
 
-},{"./resources/layer_comps.coffee":64,"./resources/layer_links.coffee":65,"./resources/resolution_info.coffee":66,"lodash":undefined}],63:[function(require,module,exports){
+},{"./resources/angle.coffee":65,"./resources/layer_comps.coffee":66,"./resources/layer_links.coffee":67,"./resources/resolution_info.coffee":68,"lodash":undefined}],64:[function(require,module,exports){
 var Resource, Resources;
 
 Resource = require('./resource.coffee');
@@ -3473,7 +3810,41 @@ module.exports = Resources = (function() {
 })();
 
 
-},{"./resource.coffee":61}],64:[function(require,module,exports){
+},{"./resource.coffee":62}],65:[function(require,module,exports){
+var Angle;
+
+module.exports = Angle = (function() {
+  Angle.prototype.id = 1037;
+
+  Angle.prototype.name = 'angle';
+
+  function Angle(resource) {
+    this.resource = resource;
+    this.file = this.resource.file;
+  }
+
+  Angle.prototype.parse = function() {
+    this.angle = this.file.readUInt();
+    return this.resource.data = this;
+  };
+
+  Angle.prototype["export"] = function() {
+    var data, i, key, len, ref;
+    data = {};
+    ref = ['angle'];
+    for (i = 0, len = ref.length; i < len; i++) {
+      key = ref[i];
+      data[key] = this[key];
+    }
+    return data;
+  };
+
+  return Angle;
+
+})();
+
+
+},{}],66:[function(require,module,exports){
 var Descriptor, LayerComps;
 
 Descriptor = require('../descriptor.coffee');
@@ -3526,7 +3897,7 @@ module.exports = LayerComps = (function() {
 })();
 
 
-},{"../descriptor.coffee":4}],65:[function(require,module,exports){
+},{"../descriptor.coffee":4}],67:[function(require,module,exports){
 var LinkLayers;
 
 module.exports = LinkLayers = (function() {
@@ -3554,7 +3925,7 @@ module.exports = LinkLayers = (function() {
 })();
 
 
-},{}],66:[function(require,module,exports){
+},{}],68:[function(require,module,exports){
 var ResolutionInfo;
 
 module.exports = ResolutionInfo = (function() {
@@ -3593,7 +3964,7 @@ module.exports = ResolutionInfo = (function() {
 })();
 
 
-},{}],67:[function(require,module,exports){
+},{}],69:[function(require,module,exports){
 module.exports = {
   pad2: function(i) {
     return (i + 1) & ~0x01;
@@ -3705,5 +4076,5 @@ module.exports = PSD = (function(superClass) {
 })(Module);
 
 
-},{"./psd/file.coffee":5,"./psd/header.coffee":6,"./psd/image.coffee":7,"./psd/init.coffee":19,"./psd/layer_mask.coffee":50,"./psd/lazy_execute.coffee":51,"./psd/nodes/root.coffee":58,"./psd/resources.coffee":63,"coffeescript-module":undefined,"rsvp":undefined}]},{},[])("psd")
+},{"./psd/file.coffee":5,"./psd/header.coffee":6,"./psd/image.coffee":7,"./psd/init.coffee":19,"./psd/layer_mask.coffee":51,"./psd/lazy_execute.coffee":52,"./psd/nodes/root.coffee":59,"./psd/resources.coffee":64,"coffeescript-module":undefined,"rsvp":undefined}]},{},[])("psd")
 });
